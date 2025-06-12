@@ -181,21 +181,32 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Paper Summary</h2>
         <div class="content has-text-justified">
-          <p><strong>What is the problem?</strong></p>
+          <h3><strong>What is the problem?</strong></h3>
           <p>
             Short-term memory is essential for cognition, but its neural mechanisms remain poorly understood. 
             While neuroscience has suggested that recurrent dynamics support sequential neural activity, 
             the precise mechanisms remain elusive—particularly given the rapid reorganization of activity following stimuli or rewards. 
             Biologically interpretable recurrent neural networks (RNNs) offer a promising avenue for generating hypotheses about these mechanisms.
-          </p>
-          <p><strong>What did we do?</strong></p>
-          <p>
-            We studied how the task properties, learning rate and the delay interval influence short-term memory dynamics 
-            in analytical models, low-rank RNNs, and full-rank RNNs. We focused on delayed-response tasks 
-            such as delayed activation and delayed cue-discrimination.
-          </p>
 
-          <p><strong>What did we find?</strong></p>
+          </p>
+          <!-- <img src="static/images/Figure1.jpg" alt="MY ALT TEXT"/> -->
+
+          <h3><strong>What did we do?</strong></h3>
+          <p>
+            We studied how the learning rate (inspired by dopamine's role in learning), the delay interval, and the post-reaction period influence 
+            short-term memory dynamics in analytical models, low-rank RNNs, and full-rank RNNs. We focused on delayed-response tasks such as 
+            delayed activation and delayed cue-discrimination.
+          </p>
+          <div class="columns is-centered">
+            <div class="column is-6">
+              <img src="static/images/fig1_D.jpg" alt="MY ALT TEXT"/>
+            </div>
+            <div class="column is-6">
+              <img src="static/images/fig1_E.jpg" alt="MY ALT TEXT"/>
+            </div>
+          </div>
+
+          <h3><strong>What did we find?</strong></h3>
           <ul>
             <li>
               We identified two distinct mechanisms for maintaining short-term memory: slow-point manifolds 
@@ -214,8 +225,9 @@
               memory-related dynamics in the brain.
             </li>
           </ul>
+          <img src="static/images/Figure4.jpg" alt="MY ALT TEXT"/>
 
-        <p><strong>What are these emergent short-term memory mechanisms?</strong></p>
+        <h3><strong>What are these emergent short-term memory mechanisms?</strong></h3>
         <p>
           This video illustrates three distinct behaviors: unable to learn, limit cycle dynamics, and slow-point manifolds—shown in that order. 
           In this experiment, we trained full-rank RNNs with 100 neurons on a delayed cue-discrimination task with a 160-millisecond delay.
@@ -223,14 +235,13 @@
           While limit cycles and slow-point manifolds produce similar activity patterns during the trial, 
           they begin to diverge in the post-reaction period—a phase that is especially difficult to capture in wet-lab experiments due to rapid synaptic reorganization.
         </p>
+
+          <video poster="" id="video1" autoplay controls muted loop>
+            <source src="static/videos/movie.webm"
+            type="video/webm">
+          </video>
       </div>
     </div>
-    </div>
-    <div class="hero-body" style="max-width: 94%; margin-block: -4rem">
-      <video poster="" id="video1" autoplay controls muted loop>
-        <source src="static/videos/movie.webm"
-        type="video/webm">
-      </video>
     </div>
   </div>
 </section>
