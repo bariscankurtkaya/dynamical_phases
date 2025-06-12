@@ -148,23 +148,6 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser video -->
-
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -192,14 +175,94 @@
 </section>
 <!-- End paper abstract -->
 
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Paper Summary</h2>
+        <div class="content has-text-justified">
+          <p><strong>What is the problem?</strong></p>
+          <p>
+            Short-term memory is essential for cognition, but its neural mechanisms remain poorly understood. 
+            While neuroscience has suggested that recurrent dynamics support sequential neural activity, 
+            the precise mechanisms remain elusive—particularly given the rapid reorganization of activity following stimuli or rewards. 
+            Biologically interpretable recurrent neural networks (RNNs) offer a promising avenue for generating hypotheses about these mechanisms.
+          </p>
+          <p><strong>What did we do?</strong></p>
+          <p>
+            We studied how the task properties, learning rate and the delay interval influence short-term memory dynamics 
+            in analytical models, low-rank RNNs, and full-rank RNNs. We focused on delayed-response tasks 
+            such as delayed activation and delayed cue-discrimination.
+          </p>
+
+          <p><strong>What did we find?</strong></p>
+          <ul>
+            <li>
+              We identified two distinct mechanisms for maintaining short-term memory: slow-point manifolds 
+              that support smooth sequences, and limit cycles that generate temporally localized dynamics.
+            </li>
+            <li>
+              We derived theoretical scaling laws linking the learning rate and delay length, predicting 
+              the emergence of each mechanism and defining critical thresholds beyond which learning fails.
+            </li>
+            <li>
+              Small changes in task structure—such as adding a post-response period—can significantly alter 
+              the underlying phase space and learned dynamics.
+            </li>
+            <li>
+              We propose testable predictions to guide wet-lab neuroscience experiments in identifying 
+              memory-related dynamics in the brain.
+            </li>
+          </ul>
+
+        <p><strong>What are these emergent short-term memory mechanisms?</strong></p>
+        <p>
+          This video illustrates three distinct behaviors: unable to learn, limit cycle dynamics, and slow-point manifolds—shown in that order. 
+          In this experiment, we trained full-rank RNNs with 100 neurons on a delayed cue-discrimination task with a 160-millisecond delay.
+          The learning rate was set to 1 for the network that unable to learn, 0.01 for the limit cycle case, and 0.001 for the slow-point manifold.
+          While limit cycles and slow-point manifolds produce similar activity patterns during the trial, 
+          they begin to diverge in the post-reaction period—a phase that is especially difficult to capture in wet-lab experiments due to rapid synaptic reorganization.
+        </p>
+      </div>
+    </div>
+    </div>
+    <div class="hero-body" style="max-width: 94%; margin-block: -4rem">
+      <video poster="" id="video1" autoplay controls muted loop>
+        <source src="static/videos/movie.webm"
+        type="video/webm">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
 
 <!-- Image carousel -->
-<section class="hero is-small">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Figures</h2>
+      </div>
+    </div>
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
-        <!-- Your image here -->
         <img src="static/images/Figure1.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           <br>
@@ -207,7 +270,6 @@
         </h2>
       </div>
       <div class="item">
-        <!-- Your image here -->
         <img src="static/images/Figure2.jpg" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           <br>
@@ -215,7 +277,6 @@
         </h2>
       </div>
      <div class="item">
-      <!-- Your image here -->
       <img src="static/images/Figure4.jpg" alt="MY ALT TEXT"/>
       <h2 class="subtitle has-text-centered">
         <br>
@@ -225,7 +286,7 @@
   </div>
 </div>
 </div>
-</section>
+</section> -->
 <!-- End image carousel -->
 
 
@@ -250,7 +311,7 @@
 <!-- End youtube video -->
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<!-- <section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3">Visualization of Emergent Dynamics</h2>
@@ -261,13 +322,12 @@
               <source src="static/videos/movie.webm"
               type="video/webm">
             </video>
-            <!-- <img src="static/videos/movie.gif" alt="MY ALT TEXT" width="94%"> -->
           </div>
         </div>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End youtube video -->
 
 
@@ -307,10 +367,14 @@
 
 
 <!-- Paper poster -->
-<section class="hero is-small">
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Paper</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Paper</h2>
+      </div>
+    </div>
 
       <iframe  src="static/pdfs/2502.17433v2.pdf" width="100%" height="550">
           </iframe>
@@ -324,7 +388,11 @@
 <!--BibTex citation -->
   <section class="section is-light" id="BibTeX">
     <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Bibtex</h2>
+      </div>
+    </div>
       <pre><code>@article{kurtkaya2025dynamical,
           title={Dynamical phases of short-term memory mechanisms in RNNs},
           author={Kurtkaya, Bariscan and Dinc, Fatih and Yuksekgonul, Mert and Blanco-Pozo, Marta and Cirakman, Ege and Schnitzer, Mark and Yemez, Yucel and Tanaka, Hidenori and Yuan, Peng and Miolane, Nina},
